@@ -1,0 +1,12 @@
+@startuml
+class Service {
+    +perform_service(): String
+}
+
+class Client {
+    +__init__(service: Service)
+    +do_something(): String
+}
+
+Service <|-- Client
+@enduml

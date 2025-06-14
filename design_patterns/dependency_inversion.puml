@@ -1,0 +1,17 @@
+@startuml
+interface ServiceInterface {
+    +perform_service(): void
+}
+
+class ConcreteService {
+    +perform_service(): String
+}
+
+class Client {
+    +__init__(service: ServiceInterface)
+    +do_something(): String
+}
+
+ServiceInterface <|-- ConcreteService
+Client --> ServiceInterface
+@enduml
