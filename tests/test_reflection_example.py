@@ -1,5 +1,5 @@
 import unittest
-from demonstrated_reflection_incaplusaltion import ExampleClass
+from reflection_and_introspection.demonstrated_reflection_incaplusaltion import ExampleClass
 
 class TestExampleClass(unittest.TestCase):
     def setUp(self):

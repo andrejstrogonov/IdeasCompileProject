@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch
-from futamura_projection import interpret, specialized_interpreter, compiler, compiler_generator
+from futamura_projections.futamura_projection import interpret, specialized_interpreter, compiler, compiler_generator
 
 class TestFutamuraProjection(unittest.TestCase):
     def test_interpret(self):

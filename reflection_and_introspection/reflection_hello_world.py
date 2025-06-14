@@ -10,7 +10,7 @@ class HelloWorldParser:
                 sys.stdout.write(line)
 
 if __name__ == "__main__":
-    parser = HelloWorldParser('data/hello_world.txt')
+    parser = HelloWorldParser('../data/hello_world.txt')
     # Using reflection to call the method
     method_name = 'parse_and_print'
     method = getattr(parser, method_name)
